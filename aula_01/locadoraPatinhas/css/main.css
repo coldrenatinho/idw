@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  background-color: #edfdf2;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0b2f9f;
+  color: #fff;
+  max-height: 4.2rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#nav-link {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1 1 auto;
+}
+
+#nav-link li {
+  padding: 1.2rem 1px;
+  text-align: center;
+  list-style: none;
+  width: 100%;
+}
+
+#nav-link li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  line-height: 2.5;
+}
+
+#nav-link li a:hover {
+  color: #dbe2e2;
+}
+
+.search
+
+/* logo */
+.logo-main {
+  display: flex;
+  align-items: center;
+}
+.logo-main a {
+  display: inline-block;
+}
+.logo-main img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* search */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.search-container {
+  border-radius: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+  flex-shrink: 0%;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.search-container input {
+  border: none;
+  border-radius: 20px;
+  padding: 1.2rem;
+  margin-right: 5px;
+}
+
+.search-container button {
+  border: none;
+  border-radius: 20px;
+  padding: 1.2rem;
+  background-color: #98ded9;
+  color: #0b2f9f;
+}
+
+.search-container button:hover {
+  background-color: #0b2f9f;
+  color: #fff;
+}
+
+.search-bar {
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 2rem;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.main-container h2 {
+  margin-bottom: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.main-container .about {
+  flex-basis: 100%;
+  width: 100%;
+  background-color: #161d6f;
+  padding: 2rem;
+  color: #edfdf2;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #161d6f;
+}
