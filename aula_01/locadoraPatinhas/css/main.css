@@ -214,19 +214,19 @@ html {
 }
 .card-container {
   position: relative;
-  width: 200px; /* Ajuste conforme necessário */
+  width: 200px;
   overflow: hidden;
 }
 
 .card-container a {
-  display: block; /* Garante que o link ocupe toda a área do card */
-  text-decoration: none; /* Remove sublinhado do link */
-  border: none; /* Remove qualquer borda do link */
+  display: block;
+  text-decoration: none;
+  border: none;
 }
 
 .card-container img {
   width: 100%;
-  display: block; /* Remove espaço embaixo da imagem */
+  display: block;
 }
 
 .card-info {
@@ -239,8 +239,8 @@ html {
   padding: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  max-height: 40%;
   text-align: left;
+  min-height: 100%;
 }
 
 .card-container:hover .card-info {
@@ -259,4 +259,125 @@ html {
 .card-container .card-info a {
   color: #fff;
   text-decoration: none;
+}
+
+.card-button {
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.card-button button {
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition-delay: 0.2s;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  opacity: 1;
+}
+
+.card-button .card-button-buy {
+  background-color: #69c9a1;
+}
+
+.card-button .card-button-locate {
+  background-color: #4876fd;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.footer {
+  background-color: #0b2f9f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #98ded9;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  background-color: #081a5b;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
 }
