@@ -1,0 +1,27 @@
+*{
+    padding: none; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FEEFAD
+}
+
+.colors{
+background-color: #03AED2
+#68D2E8
+#FDDE55
+#FEEFAD
+}
+
+#main-header{
+    background-image:  url(../img/4909528.jpg);
+    display: flex;
+}
+
+
+
+
+
+
