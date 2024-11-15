@@ -10,6 +10,11 @@ html {
   background-color: #edfdf2;
 }
 
+/* Ajuste geral para evitar rolagem horizontal */
+body {
+  overflow-x: hidden;
+}
+
 /* nav */
 #nav-container {
   display: flex;
@@ -218,10 +223,12 @@ header{
   position: relative;
   width: 200px;
   overflow: hidden;
+  width: 100%; /* Certifique-se de que a largura seja 100% */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 .card-container a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   border: none;
 }
@@ -243,6 +250,11 @@ header{
   transition: opacity 0.3s ease;
   text-align: left;
   min-height: 100%;
+  display: block;
+  opacity: 1;
+  width: 100%; /* Certifique-se de que a largura seja 100% */
+  left: 0; /* Ajuste a posição para evitar overflow */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
 .card-container:hover .card-info {
@@ -387,13 +399,15 @@ footer img {
 
 
 @media  only screen and (max-width: 450px) {
-.card-container-max-width-flex{
-  padding: 0;
+.search-bar, .search-container{
+  display: none;
 }
 #nav-container {
   flex-wrap: wrap ;
   max-height: none;
   padding: 0;
+  padding: 10px 20px;
+  padding-top: 30px;
 }
 #nav-container .logo-main{
   flex-basis: 100%;
@@ -406,29 +420,43 @@ footer img {
 #nav-link li{
   flex-basis: 30%;
 }
-.card-container-max-width-flex .card-container{
-      display: block;
-      width: 100%;
-      flex-basis: 100%;
-  }
-  .card-container{
-    width: 80;
-  }
-  .card-container a{
-    width: 34%;
-  }
-.card-container .card-info {
-    display: block;
-    opacity: 1;
-    width: 70;
-    left: 120px;
-  }
-
+.card-container-max-width-flex{
+  padding: 0;
 }
-
+.card-container-max-width-flex .card-container {
+  flex: 1 1 100%;
+  margin: 1 solid red
+}
+.card-container{
+  display: flex;
+}
+.card-container-max-width-flex .card-container a{
+  flex: 0 0 35%;
+}
+.card-container-max-width-flex .card-container .card-info{
+  opacity: 1;
+}
+.card-container .card-info{
+  position: relative;
+}
+.card-info .card-button{
+  display: flex;
+}
+.main-container .about h2{
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+}
+.main-container .about p{
+  font-size: 14px;
+  line-height: 20px;
+}
+}
 @media  only screen and (max-width: 600px) {
   .card-container-max-width-flex .card-container {
   flex-basis:80%  ;
+  padding: 0;
   }
 }
 
