@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Renato Araujo da Silva" />
-    <link rel="stylesheet" href="css/pages.css" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Patinhas</title>
   </head>
@@ -12,35 +11,55 @@
     <header>
       <nav id="nav-container">
         <div class="logo-main">
-          <a id="logo" href="#" class="logo"
+          <a id="logo" href="../index.html" class="logo"
             ><img src="../../img/icon/river_14069944.png" alt="patinha-blur"
           /></a>
         </div>
         <div class="nav-menu">
+        </div>
           <ul id="nav-link">
             <li>
-              <a href="" class="nav-link-li"><span>home</span></a>
+              <a href="../index.html" class="nav-link-li"><span>home</span></a>
             </li>
-            <li>
+            <li class="dropdown">
               <a href="" class="nav-link-li"><span>Novos</span></a>
+              <ul class="dropdown-content">
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Jogos</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="" class="nav-link-li"><span>Populatres</span></a>
+            <li class="dropdown">
+              <a href="" class="nav-link-li"><span>Populares</span></a>
+              <ul class="dropdown-content">
+                <li><a href="#">Filmes</a></li>
+                <li><a href="#">Séries</a></li>
+                <li><a href="#">Jogos</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="dropdown">
               <a href="" class="nav-link-li"><span>Guia</span></a>
+              <ul class="dropdown-content">
+                <li><a href="#">Como Alugar</a></li>
+                <li><a href="#">Como Comprar</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="dropdown">
               <a href="" class="nav-link-li"><span>Esporte</span></a>
+              <ul class="dropdown-content">
+                <li><a href="#">Futebol</a></li>
+                <li><a href="#">Basquete</a></li>
+                <li><a href="#">Vôlei</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="dropdown">
               <a href="" class="nav-link-li"><span>Infantil</span></a>
-            </li>
-            <li>
-               <button id="toggle-dark-mode">Modo Escuro</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Desenhos</a></li>
+                <li><a href="#">Animações</a></li>
+              </ul>
             </li>
           </ul>
-        </div>
         <div class="search-container">
           <div class="search-bar">
             <input type="text" placeholder="Pesquisar" />
@@ -51,53 +70,56 @@
     </header>
     <main>
       <div id="trailer">
-        <div>
-          <h3>Trailer</h3>
-        </div>
-        <iframe
-          src="https://www.youtube.com/embed/nA8KmHC2Z-g?si=sEJ9W5VgcebcA6fP"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; 
-          autoplay; 
-          clipboard-write; 
-          encrypted-media; 
-          gyroscope;"
-        ></iframe>
-      </div>
-      <div id="review-section">
-        <h3>Reviews</h3>
-        <div id="reviews">
-        </div>
-        <div id="review-form">
-          <h4>Adicionar um Comentário</h4>
-          <textarea id="comment" placeholder="Escreva seu comentário aqui..."></textarea>
           <div>
-            <label for="rating">Classificação:</label>
-            <select id="rating">
-              <option value="1">1 Estrela</option>
-              <option value="2">2 Estrelas</option>
-              <option value="3">3 Estrelas</option>
-              <option value="4">4 Estrelas</option>
-              <option value="5">5 Estrelas</option>
-            </select>
+            <h3>Trailer</h3>
           </div>
-          <button id="submit-review">Enviar</button>
+          <iframe
+            src="https://www.youtube.com/embed/nA8KmHC2Z-g?si=sEJ9W5VgcebcA6fP"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; 
+           autoplay; 
+           clipboard-write; 
+           encrypted-media; 
+           gyroscope; 
+           picture-in-picture; 
+           web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+          </div>
+      <div class="review-section">
+        <h3>Reviews</h3>
+        <div class="review">
+          <p>"Akira é um filme incrível que redefine o gênero de animação."</p>
+          <p class="actor">- Ator: Katsuhiro Otomo</p>
+        </div>
+        <div class="add-review">
+          <h3>Adicionar Comentário</h3>
+          <input type="text" placeholder="Seu nome" />
+          <textarea placeholder="Seu comentário"></textarea>
+          <div class="rating">
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+            <span>&#9733;</span>
+          </div>
+          <button type="submit">Enviar</button>
         </div>
       </div>
     </main>
-    <div class="card-container-max-width-flex">
-        </a>
       </div>
-      <div class="filmcard-horizontal">
-          <img src="../img/thumbnail/akira/akira_poster.png" alt="Akira Poster" />
+      <div class="filmcard-horizontal-container">
+        <div id="fimlcard-horizonnttal-banner">
+        <img src="../img/thumbnail/akira/akira_poster.png" alt="Akira Poster" style="max-width: 30%;" />
+        </div>
           <div class="film-info-horizontal">
               <h1>Akira</h1>
               <p>A cidade de Tokido foi de base</p>
               <p>1900</p>
               <p>Tsunde</p>
-              <div class="card-button">
-              </div>
           </div>
       </div>
     <footer class="footer">
@@ -139,7 +161,6 @@
       <div class="footer-bottom">
         <p>&copy; 2024 Locadora de Filmes. Todos os direitos reservados.</p>
       </div>
-    </footer>
-    <style></style>
+  </footer>
   </body>
 </html>

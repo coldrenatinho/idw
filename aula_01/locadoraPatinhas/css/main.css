@@ -467,3 +467,55 @@ footer img {
 /* Dispostivos Largos (laptops/desktops, 992px para cima) */
 @media only screen and (min-width: 992px) {
 }
+#review-section {
+  margin-top: 20px;
+}
+
+#review-form {
+  margin-top: 20px;
+}
+
+#review-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#review-form select {
+  margin-bottom: 10px;
+}
+
+#reviews {
+  margin-top: 20px;
+}
+
+.review {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.review .rating {
+  color: gold;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode, nav.dark-mode, main.dark-mode {
+  background-color: #1e1e1e;
+}
+
+button.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+#review-section.dark-mode, #review-form.dark-mode, #reviews.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.review.dark-mode {
+  border-bottom: 1px solid #444;
+}
