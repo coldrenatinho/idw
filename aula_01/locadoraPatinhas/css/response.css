@@ -46,6 +46,10 @@
     display: flex;
   }
 
+  .card-container .card-image {
+    flex-basis: 30%;
+  }
+
   .card-container .card-info {
     position: relative;
     opacity: 1;
