@@ -1,110 +1,102 @@
-
 /* Smartphones (600px para baixo) */
 @media only screen and (max-width: 600px) {
 }
-@media  only screen and (max-width: 600px) {
-.search-bar, .search-container{
-  display: none;
-}
-#nav-container {
-  flex-wrap: wrap ;
-  max-height: none;
-  padding: 0;
-  padding: 10px 20px;
-  padding-top: 30px;
-}
-#nav-container .logo-main{
-  flex-basis: 100%;
-  justify-content: center;
-}
-#nav-link{
-  flex-wrap: wrap;
-  flex: row;
-}
-#nav-link li{
-  flex-basis: 30%;
-}
-.card-container-max-width-flex{
-  padding: 0;
-}
-.card-container-max-width-flex .card-container {
-  flex: 1 1 100%;
-  margin: 1 solid red
-}
-.card-container{
-  display: flex;
-}
-.card-container-max-width-flex .card-container a{
-  flex: 0 0 35%;
-}
-.card-container-max-width-flex .card-container .card-info{
-  opacity: 1;
-}
-.card-container .card-info{
-  position: relative;
-}
-.card-info .card-button{
-  display: flex;
-}
-.main-container .about h2{
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  font-weight: bold;
-}
-.main-container .about p{
-  font-size: 14px;
-  line-height: 20px;
-}
-}
-@media only screen and (max-width: 853px) {
- 
-  .search{
+@media only screen and (max-width: 600px) {
+  /* TODO corigir barra de pesquisa ou trocar para um segundo elementro de flex e realizar a trocag */
+  .search-bar,
+  .search-container {
     display: none;
   }
-  .nav-menu{
+
+  /* TODO corigir barra de navegação que agora está bugada com o topdow */
+  #nav-container {
+    flex-wrap: wrap;
+    max-height: none;
+    padding: 0;
+    padding: 10px 20px;
+    padding-top: 30px;
+  }
+
+  #nav-container .logo-main {
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  #nav-link {
+    flex-wrap: wrap;
+    flex: row;
+  }
+
+  #nav-link li {
+    flex-basis: 30%;
+  }
+
+  /* cards */
+  .card-container-max-width-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .card-container-max-width-flex .card-container {
+    flex-basis: 100%;
     width: 100%;
   }
-  .main-container .about{
-  flex-basis: 90%;
-  padding: 1rem;
+
+  .card-container {
+    display: flex;
   }
-  .footer-container{
+
+  .card-container .card-info {
+    position: relative;
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 853px) {
+  .search {
+    display: none;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .main-container .about {
+    flex-basis: 90%;
+    padding: 1rem;
+  }
+  .footer-container {
     margin: 2rem;
   }
-  .footer-container h4{
-  font-size: 14px;
-  }
-  .footer-container p{
-    font-size: 12px;
-  }
-  .about h2{
+  .footer-container h4 {
     font-size: 14px;
   }
-  .about p{
+  .footer-container p {
+    font-size: 12px;
+  }
+  .about h2 {
+    font-size: 14px;
+  }
+  .about p {
     font-size: 10px;
   }
-  .main-container{
+  .main-container {
     padding: 0;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-
-  #nav-container{
+  #nav-container {
     max-width: 80%;
     margin: 0 auto;
   }
 
-  .main-container{
+  .main-container {
     max-width: 80%;
     margin: 0 auto;
   }
-  .card-container-max-width-flex{
-    gap: 50px
+  .card-container-max-width-flex {
+    gap: 50px;
   }
   .card-container-max-width-flex .card-container {
-  flex-basis:35%;
+    flex-basis: 35%;
   }
 }
 @media only screen and (min-width: 768px) {

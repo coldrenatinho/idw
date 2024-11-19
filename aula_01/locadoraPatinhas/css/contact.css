@@ -38,7 +38,6 @@ fieldset {
 .contact-container textarea {
   font-size: 16px;
   padding: 10px 20px;
-  width: 200px;
   border-radius: 5px;
   border: solid #060111 1px;
   margin-top: 1rem;
@@ -47,12 +46,9 @@ fieldset {
 .contact-container textarea {
   display: block;
   margin: 15px auto;
-  width: 640px;
-  height: 150px;
   box-shadow: inset 5px 5px 10px hsla(0, 2%, 32%, 0.097);
   resize: none;
   overflow-y: scroll;
-  scroll-behavior: smooth;
 }
 
 .contact-container input[type="submit"] {
