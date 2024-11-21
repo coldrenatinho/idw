@@ -48,3 +48,72 @@
   font-size: 16px;
   color: #333;
 }
+
+/* Efeitos de hover para botões */
+button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Efeitos de hover para links */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Feedback visual para campos de formulário */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:valid,
+textarea:valid {
+  border-color: #28a745;
+}
+
+input:invalid,
+textarea:invalid {
+  border-color: #dc3545;
+}
+/* Estilos para o indicador de carregamento */
+.loading-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none; /* Inicialmente oculto */
+}
+
+.loading-indicator::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 4px solid #007bff;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

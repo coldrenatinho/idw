@@ -208,3 +208,7 @@ function showThankYouMessage(rating) {
     thankYouMessage.style.display = "none";
   }, 5000);
 }
+document.addEventListener("DOMContentLoaded", function () {
+  var loadingIndicator = document.getElementById("loading-indicator");
+  loadingIndicator.style.display = "none"; // Ocultar o indicador de carregamento após o carregamento da página
+});

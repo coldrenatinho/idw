@@ -131,3 +131,43 @@
   text-align: left;
   margin-top: 1.2rem;
 }
+
+@media screen and (max-width: 600px) {
+  .page-traier-container {
+    flex-direction: column-reverse;
+  }
+  .page-traier-container .info {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+  .page-traier-container #iframe {
+    flex-basis: 100%;
+  }
+  .filmcard-horizontal {
+    flex-direction: column;
+  }
+  .film-stars-rating {
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  .page-traier-container {
+    flex-direction: column-reverse;
+  }
+  .page-traier-container .info {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+  .page-traier-container #iframe {
+    flex-basis: 100%;
+  }
+  .filmcard-horizontal {
+    flex-direction: column;
+  }
+  .film-stars-rating {
+    flex-direction: column;
+  }
+  
+}
