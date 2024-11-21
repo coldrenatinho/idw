@@ -84,6 +84,25 @@
   .main-container {
     padding: 0;
   }
+  #nav-container {
+    padding: 0;
+  }
+  /* TODO corigir barra de pesquisa ou trocar para um segundo elementro de flex e realizar  */
+  .search-container {
+    justify-content: center;
+    margin: 1px solid red;
+    display: none;
+  }
+  #nav-container .search-bar {
+    flex-basis: 100%;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+  }
+  #nav-container .search-bar span {
+    width: 100%;
+    display: inline-block;
+  }
 }
 
 @media only screen and (min-width: 1200px) {

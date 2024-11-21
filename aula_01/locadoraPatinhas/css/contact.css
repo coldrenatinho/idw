@@ -3,11 +3,10 @@
   text-align: center;
   padding: 5rem 2rem;
   margin-top: 2.7rem;
-  background-image: url('../img/contact/banner.jpg');
+  background-image: url("../img/contact/banner.jpg");
   background-color: #081a5b; /* Fallback background color */
   background-position: center;
   background-size: cover;
-  z-index: -1;
   padding: 10rem 0;
   margin-bottom: 5rem;
   border-radius: 2.7px;
@@ -22,11 +21,11 @@
 .contact-container h2 {
   font-size: 32px;
   margin-bottom: 15px;
-  color: #0d1616
+  color: #0d1616;
 }
 .contact-container p {
   margin-top: 15px;
-  color: #e4fcfc
+  color: #e4fcfc;
 }
 
 fieldset {

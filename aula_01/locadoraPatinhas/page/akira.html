@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../css/pages.css" />
     <link rel="stylesheet" href="../css/response.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/page_trailer.css" />
+    <link rel="stylesheet" href="../css/page_response.css" />
+    <link rel="stylesheet" href="../css/page_reviw.css" />
+    <script src="../js/main.js"></script>
     <title>Patinhas</title>
   </head>
   <body>
@@ -17,22 +21,47 @@
       <nav id="nav-container">
         <div class="logo-main">
           <a id="logo" href="#" class="logo"
-            ><img src="../../img/icon/river_14069944.png" alt="patinha-blur"
+            ><img src="../img/icon/river_14069944.png" alt="patinha-blur"
           /></a>
         </div>
         <div class="nav-menu">
+          <!-- fazer um menu em cascata -->
           <ul id="nav-link">
-            <li>
-              <a href="" class="nav-link-li"><span>home</span></a>
+            <li class="dropdown">
+              <a href="#" class="nav-link-li dropdown-toggle"
+                ><span>Home</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#">Subitem 1</a></li>
+                <li><a href="#">Subitem 2</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="" class="nav-link-li"><span>Novos</span></a>
+            <li class="dropdown">
+              <a href="#" class="nav-link-li dropdown-toggle"
+                ><span>Novos</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#">Subitem 1</a></li>
+                <li><a href="#">Subitem 2</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="" class="nav-link-li"><span>Populatres</span></a>
+            <li class="dropdown">
+              <a href="#" class="nav-link-li dropdown-toggle"
+                ><span>Populares</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#">Subitem 1</a></li>
+                <li><a href="#">Subitem 2</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="" class="nav-link-li"><span>Guia</span></a>
+            <li class="dropdown">
+              <a href="#" class="nav-link-li dropdown-toggle"
+                ><span>Guia</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="#">Subitem 1</a></li>
+                <li><a href="#">Subitem 2</a></li>
+              </ul>
             </li>
             <li>
               <a href="" class="nav-link-li"><span>Esporte</span></a>
@@ -44,36 +73,68 @@
         </div>
         <div class="search-container">
           <div class="search-bar">
-            <input type="text" placeholder="Pesquisar" />
-            <button type="submit">Buscar</button>
+            <span>
+              <input type="text" placeholder="Pesquisar" />
+            </span>
+            <span>
+              <button type="submit">Buscar</button>
+            </span>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <div id="trailer">
-        <div>
-          <h3>Trailer</h3>
-        </div>
-        <iframe
-          src="https://www.youtube.com/embed/nA8KmHC2Z-g?si=sEJ9W5VgcebcA6fP"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; 
+      <section class="film-trailer-max-width-flex">
+        <div class="page-traier-container">
+          <div class="info">
+            <h3 id="trailer-header">Trailer</h3>
+            <h2 id="trailer-title">Akira</h2>
+            <p id="trailer-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              ut distinctio! Laudantium reprehenderit quod ducimus sed
+              repudiandae in sunt, nobis dolorum dolor quidem recusandae, alias
+              repellat quasi voluptates. Quod, quia.
+            </p>
+            <!-- TODO colocar estrela caracter especioal -->
+            <div class="film-star-rating">
+              <input type="radio" name="rating" id="star5" value="5" />
+              <label for="star5">★</label>
+              <input type="radio" name="rating" id="star4" value="4" />
+              <label for="star4">★</label>
+              <input type="radio" name="rating" id="star3" value="3" />
+              <label for="star3">★</label>
+              <input type="radio" name="rating" id="star2" value="2" />
+              <label for="star2">★</label>
+              <input type="radio" name="rating" id="star1" value="1" />
+              <label for="star1">★</label>
+            </div>
+            <p id="authorOrPublisher">lorem</p>
+          </div>
+          <div id="iframe">
+            <iframe
+              src="https://www.youtube.com/embed/nA8KmHC2Z-g?si=sEJ9W5VgcebcA6fP"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; 
           autoplay; 
           clipboard-write; 
           encrypted-media; 
           gyroscope;"
-        ></iframe>
-      </div>
+            ></iframe>
+          </div>
+        </div>
+      </section>
       <div id="review-section">
         <h3>Reviews</h3>
-        <div id="reviews">
-        </div>
+        <div id="reviews"></div>
         <div id="review-form">
           <h4>Adicionar um Comentário</h4>
-          <textarea id="comment" placeholder="Escreva seu comentário aqui..."></textarea>
+          <textarea
+            id="comment"
+            placeholder="Escreva seu comentário aqui..."
+          ></textarea>
           <div>
+            <!-- TODO fazer uma mensgem em card com uma resposata para cada classificacao  -->
             <label for="rating">Classificação:</label>
             <select id="rating">
               <option value="1">1 Estrela</option>
@@ -87,20 +148,6 @@
         </div>
       </div>
     </main>
-    <div class="card-container-max-width-flex">
-        </a>
-      </div>
-      <div class="filmcard-horizontal">
-          <img src="../img/thumbnail/akira/akira_poster.png" alt="Akira Poster" />
-          <div class="film-info-horizontal">
-              <h1>Akira</h1>
-              <p>A cidade de Tokido foi de base</p>
-              <p>1900</p>
-              <p>Tsunde</p>
-              <div class="card-button">
-              </div>
-          </div>
-      </div>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-section">
