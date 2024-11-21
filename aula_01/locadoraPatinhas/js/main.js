@@ -149,3 +149,62 @@ function showGreeting() {
     greetingCard.style.display = "none";
   }, 5000);
 }
+document.addEventListener("DOMContentLoaded", function () {
+  var submitReviewButton = document.getElementById("submit-review");
+
+  submitReviewButton.addEventListener("click", function () {
+    var comment = document.getElementById("comment").value;
+    var rating = document.getElementById("rating").value;
+
+    if (comment.trim() === "") {
+      alert("Por favor, escreva um comentário.");
+      return;
+    }
+
+    var reviewContainer = document.getElementById("reviews");
+    var reviewElement = document.createElement("div");
+    reviewElement.classList.add("review");
+
+    var ratingElement = document.createElement("div");
+    ratingElement.classList.add("rating");
+    ratingElement.textContent = "Classificação: " + "★".repeat(rating);
+
+    var commentElement = document.createElement("div");
+    commentElement.classList.add("comment");
+    commentElement.textContent = comment;
+
+    reviewElement.appendChild(ratingElement);
+    reviewElement.appendChild(commentElement);
+    reviewContainer.appendChild(reviewElement);
+
+    // Limpar o formulário
+    document.getElementById("comment").value = "";
+    document.getElementById("rating").value = "1";
+
+    // Exibir mensagem de agradecimento
+    showThankYouMessage(rating);
+  });
+});
+
+function showThankYouMessage(rating) {
+  var thankYouMessage = document.getElementById("thank-you-message");
+  var message = "";
+
+  if (rating == 1 || rating == 2) {
+    message =
+      "Obrigado pelo seu feedback! Sentimos muito que sua experiência não tenha sido das melhores.";
+  } else if (rating == 3) {
+    message = "Obrigado pelo seu feedback! Estamos sempre buscando melhorar.";
+  } else if (rating == 4 || rating == 5) {
+    message =
+      "Obrigado pelo seu feedback! Ficamos felizes que você tenha gostado!";
+  }
+
+  thankYouMessage.textContent = message;
+  thankYouMessage.style.display = "block";
+
+  // Fechar a mensagem automaticamente após 5 segundos
+  setTimeout(function () {
+    thankYouMessage.style.display = "none";
+  }, 5000);
+}
